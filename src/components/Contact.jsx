@@ -3,10 +3,9 @@ import { Mail, Github, Linkedin, Twitter } from 'lucide-react'
 import { fadeInUp, staggerContainer, viewportDefault } from '../utils/animations'
 
 const SOCIAL_LINKS = [
-  { href: 'mailto:you@example.com', icon: Mail, label: 'Email' },
-  { href: 'https://github.com', icon: Github, label: 'GitHub' },
-  { href: 'https://linkedin.com', icon: Linkedin, label: 'LinkedIn' },
-  { href: 'https://twitter.com', icon: Twitter, label: 'Twitter' },
+  { href: 'mailto:ankireddypalliharini@gmail.com', icon: Mail, label: 'Email' },
+  { href: 'https://github.com/HariniAnkireddypalli', icon: Github, label: 'GitHub' },
+  { href: 'www.linkedin.com/in/harini-ankireddypalli-a75b39287', icon: Linkedin, label: 'LinkedIn' }
 ]
 
 export default function Contact() {
