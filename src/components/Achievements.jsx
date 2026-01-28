@@ -4,31 +4,27 @@ import { fadeInUp, staggerContainerSlow, viewportDefault } from '../utils/animat
 
 const ACHIEVEMENTS = [
   {
-    title: 'Senior Developer Promotion',
+    title: 'cambrige certified',
     year: '2024',
-    description: 'Recognized for technical leadership and delivery excellence.',
-    icon: Award,
+    description: ' Cambridge B1 English Certification (CEFR Level)',
     side: 'left',
   },
   {
-    title: 'Hackathon Winner',
-    year: '2023',
-    description: 'First place in company-wide innovation challenge.',
-    icon: Trophy,
+    title: 'Good CGPA',
+    year: '2026   ',
+    description: ' Maintained 8.5 CGPA in B.Tech Computer Science Engineering',
     side: 'right',
   },
   {
-    title: 'Open Source Maintainer',
-    year: '2023',
-    description: 'Active contributor to popular React and tooling projects.',
-    icon: Star,
+    title: 'Smart Interz',
+    year: '2026',
+    description: 'completed Full Stack Development Internship at Smart Internz',
     side: 'left',
   },
   {
-    title: 'Client Impact Award',
-    year: '2022',
-    description: 'Delivered project that exceeded client KPIs by 40%.',
-    icon: Target,
+    title: 'Core Java & Data Structures Training',
+    year: '2026',
+    description: 'Completed Core Java & Data Structures Training (Smart Interview)',
     side: 'right',
   },
 ]
