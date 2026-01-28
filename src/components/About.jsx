@@ -62,8 +62,8 @@ export default function About() {
           <motion.div variants={fadeInUp} className="flex flex-col items-center md:items-end">
             <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden border-2 border-accent-primary/30 shadow-xl shadow-accent-primary/10">
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop"
-                alt="About"
+                src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop"
+                alt="Harini Ankireddypalli"
                 className="w-full h-full object-cover"
               />
             </div>

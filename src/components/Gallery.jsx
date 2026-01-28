@@ -15,15 +15,18 @@ const GALLERY_ITEMS = [
   { id: 5, src: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop', title: 'Workspace', category: 'Inspiration' },
   { id: 6, src: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&h=400&fit=crop', title: 'Collaboration', category: 'Achievements' },
   { id: 7, src: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=400&fit=crop', title: 'Tech', category: 'Inspiration' },
-  { id: 8, src: 'https://images.unsplash.com/photo-1542204625-23b6f4e3a26e?w=600&h=400&fit=crop', title: 'City Lights', category: 'Travel' },
+  { id: 8, src: 'https://images.unsplash.com/photo-1514565131-fce0801e578f?w=600&h=400&fit=crop', title: 'City Lights', category: 'Travel' },
   { id: 9, src: 'https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?w=600&h=400&fit=crop', title: 'Reading', category: 'Hobbies' },
   { id: 10, src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop', title: 'Ideas', category: 'Inspiration' },
 ]
+
+const FALLBACK_IMAGE = 'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=600&h=400&fit=crop'
 
 export default function Gallery() {
   const [activeCategory, setActiveCategory] = useState('All')
   const [lightboxOpen, setLightboxOpen] = useState(false)
   const [lightboxIndex, setLightboxIndex] = useState(0)
+  const [failedIds, setFailedIds] = useState(new Set())
 
   const filtered = activeCategory === 'All'
     ? GALLERY_ITEMS
@@ -101,10 +104,11 @@ export default function Gallery() {
                 onClick={() => openLightbox(index)}
               >
                 <img
-                  src={item.src}
+                  src={failedIds.has(item.id) ? FALLBACK_IMAGE : item.src}
                   alt={item.title}
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-[600ms] ease-[cubic-bezier(0.4,0,0.2,1)] group-hover:scale-110"
                   loading="lazy"
+                  onError={() => setFailedIds((prev) => new Set(prev).add(item.id))}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute inset-x-0 bottom-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 flex items-center justify-between">

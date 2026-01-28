@@ -5,8 +5,8 @@ import { ChevronDown } from 'lucide-react'
 import { useMousePosition } from '../hooks/useMousePosition'
 import { letterReveal, fadeInUp } from '../utils/animations'
 
-const NAME = 'Your Name'
-const TAGLINE = 'Full-Stack Developer & Creative Problem Solver'
+const NAME = 'Harini Ankireddypalli'
+const TAGLINE = 'Pursuing 4th Year BTech'
 const DESCRIPTION = 'Crafting digital experiences that inspire. Passionate about clean code, smooth animations, and user-centric design.'
 
 export default function Hero() {
@@ -126,8 +126,8 @@ export default function Hero() {
         >
           <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-2xl overflow-hidden border-2 border-accent-primary/30 bg-bg-secondary group">
             <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop"
-              alt="Profile"
+              src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop"
+              alt="Harini Ankireddypalli"
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             />
             <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none rounded-2xl shadow-[0_0_60px_rgba(99,102,241,0.4)]" />

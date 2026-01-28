@@ -66,7 +66,7 @@ export default function Navigation() {
             className="font-display text-xl font-bold text-text-primary hover:opacity-90 transition-opacity"
             aria-label="Go to home"
           >
-            Your Name
+            Harini Ankireddypalli
           </button>
 
           {/* Desktop nav */}
