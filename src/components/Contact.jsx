@@ -59,7 +59,7 @@ export default function Contact() {
           viewport={viewportDefault}
           className="mt-8 text-text-secondary text-sm"
         >
-          you@example.com
+          ankireddypalliharini@gmail.com
         </motion.p>
       </div>
     </section>
